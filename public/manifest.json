@@ -1,0 +1,17 @@
+{
+  "short_name": "PlantDoc AI",
+  "name": "Plant Doctor AI",
+  "description": "An intelligent application that helps you identify plant diseases using image and voice recognition. Just upload a photo of your plant, describe the symptoms, and get an AI-powered diagnosis and care plan.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#10b981",
+  "background_color": "#f3f4f6"
+}

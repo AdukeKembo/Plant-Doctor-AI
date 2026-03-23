@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Basic Meta Tags -->
+    <title>Plant Doctor AI</title>
+    <meta name="description" content="An intelligent application that helps you identify plant diseases using image and voice recognition. Just upload a photo of your plant, describe the symptoms, and get an AI-powered diagnosis and care plan." />
+    <meta name="theme-color" content="#10b981">
+
+    <!-- Icons & PWA -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.svg">
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- iOS PWA Specific Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Plant Doctor">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://plant-doctor-ai.app/" />
+    <meta property="og:title" content="Plant Doctor AI: Instant Plant Disease Diagnosis" />
+    <meta property="og:site_name" content="Plant Doctor AI" />
+    <meta property="og:description" content="Got a sick plant? Snap a photo, describe the symptoms, and our AI will instantly diagnose the issue and provide a treatment plan. Get started with Plant Doctor AI!" />
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/lakeside-hoops-hub.firebasestorage.app/o/Untitled50.png?alt=media&token=63541a34-5568-466d-8fd4-9176316d1715" />
+    <meta property="og:image:secure_url" content="https://firebasestorage.googleapis.com/v0/b/lakeside-hoops-hub.firebasestorage.app/o/Untitled50.png?alt=media&token=63541a34-5568-466d-8fd4-9176316d1715" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="An illustration of a smartphone analyzing a plant leaf, with the app name 'Plant Doctor AI'." />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@PlantDoctorAI" />
+    <meta name="twitter:url" content="https://plant-doctor-ai.app/" />
+    <meta name="twitter:title" content="Plant Doctor AI: Instant Plant Disease Diagnosis" />
+    <meta name="twitter:description" content="Got a sick plant? Snap a photo, describe the symptoms, and our AI will instantly diagnose the issue and provide a treatment plan. Get started with Plant Doctor AI!" />
+    <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/lakeside-hoops-hub.firebasestorage.app/o/Untitled50.png?alt=media&token=63541a34-5568-466d-8fd4-9176316d1715" />
+    <meta name="twitter:image:alt" content="An illustration of a smartphone analyzing a plant leaf, with the app name 'Plant Doctor AI'." />
+
+    <!-- Scripts and Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-green': {
+                light: '#6ee7b7',
+                DEFAULT: '#10b981',
+                dark: '#047857',
+              },
+              'brand-gray': {
+                light: '#f3f4f6',
+                DEFAULT: '#9ca3af',
+                dark: '#374151',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+                'fade-in': 'fadeIn 0.5s ease-in-out',
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': { opacity: '0', transform: 'translateY(10px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                },
+            }
+          },
+        },
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.525.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.11.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-gray-light">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

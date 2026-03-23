@@ -1,0 +1,9 @@
+{
+  "name": "Plant Doctor AI",
+  "description": "An intelligent application that helps you identify plant diseases using image and voice recognition. Just upload a photo of your plant, describe the symptoms, and get an AI-powered diagnosis and care plan.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "prompt": ""
+}
